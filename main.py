@@ -25,6 +25,7 @@ async def alerta(request: Request):
     print(exchange)
     print(ticker)
     print(texto)
+    print(dir(request))
 
 
 
