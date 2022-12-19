@@ -16,7 +16,7 @@ async def root():
 
 @app.post("/alerta")
 async def alerta(request: Request):
-    msg = request.json
+    msg = request.json()
     tiempo = msg['time']
     exchange = msg['exchange']
     ticker = msg['ticker']
